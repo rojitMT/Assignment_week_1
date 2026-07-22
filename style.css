@@ -1,0 +1,223 @@
+/* General Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header{
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*  Navigation*/
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar a:hover{
+    color: #facc15;
+}
+
+/*  Main */
+
+main{
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Section Styling */
+
+section{
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2,
+h3{
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+/*  About */
+
+#about{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#about img{
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #cccccc;
+}
+
+#about p{
+    text-align: justify;
+}
+
+/*  Socials*/
+
+#socials a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+#socials a:hover{
+    text-decoration: underline;
+}
+
+/* Skills */
+
+dt{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Projects */
+
+#projects article{
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#projects h4{
+    margin-bottom: 10px;
+}
+
+#projects p{
+    margin-bottom: 10px;
+}
+
+#projects a{
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#projects a:hover{
+    text-decoration: underline;
+}
+
+/*  Contact */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #facc15;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+    main{
+        width: 95%;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about p{
+        text-align: left;
+    }
+
+}
